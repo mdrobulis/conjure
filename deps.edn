@@ -34,7 +34,8 @@
   :compile
   {:extra-paths ["classes"]
    :jvm-opts ["-Dclojure.compiler.direct-linking=true"
-              "-Dclojure.compiler.elide-meta=[:doc,:file,:line,:added]"]}
+              "-Dclojure.compiler.elide-meta=[:doc,:file,:line,:added]"]
+   :main-opts ["--eval" "(compile 'conjure.main)"]}
 
   :fast
   {:extra-paths ["classes"]
